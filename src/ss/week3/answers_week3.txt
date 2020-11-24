@@ -1,0 +1,26 @@
+    _   _  _ _____      _____ ___  ___   __      _____ ___ _  __   ____
+   /_\ | \| / __\ \    / / __| _ \/ __|  \ \    / / __| __| |/ /  |__ /
+  / _ \| .` \__ \\ \/\/ /| _||   /\__ \   \ \/\/ /| _|| _|| ' <    |_ \
+ /_/ \_\_|\_|___/ \_/\_/ |___|_|_\|___/    \_/\_/ |___|___|_|\_\  |___/
+
+Your name(s):
+-
+-
+
+Please submit your textual answers to the following questions in this file:
+- P-3.1
+
+    1. There is the initial password so that you could change the password if you didn't provide any initial password yourself.
+    2. So that you could easily get the initial password and change it.
+
+- P-3.14
+
+    All classes were covered when I ran the test suite with coverage. So they all got 100% for methods and lines.
+    I would say 0% class coverage is certainly not good and coverage for said classes should be implemented ASAP.
+
+- P-3.15
+
+    It makes errors that would otherwise be difficult to read by a human actually readable in development. This is because
+    you can set custom messages for the assertions so you know exactly where to look and what went wrong right away. I tested this with
+    activate command by providing it a bad password (check the class to see what error message the assert throws).
+

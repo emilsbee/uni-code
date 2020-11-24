@@ -1,0 +1,38 @@
+    _   _  _ _____      _____ ___  ___  __      _____ ___ _  __  ___
+   /_\ | \| / __\ \    / / __| _ \/ __| \ \    / / __| __| |/ / |_  )
+  / _ \| .` \__ \\ \/\/ /| _||   /\__ \  \ \/\/ /| _|| _|| ' <   / /
+ /_/ \_\_|\_|___/ \_/\_/ |___|_|_\|___/   \_/\_/ |___|___|_|\_\ /___|
+
+Your name(s):
+- Emils Bernhards
+-
+
+Please submit your textual answers to the following questions in this file:
+- P-2.2
+Queries:
+    * get lamp state
+    * get next lamp state
+    * validate user's input command
+    * get list of commands available to user
+
+Commands:
+    * set lamp state
+
+- P-2.9
+    1) In java.lang package
+    2) In total there are 15 constructor methods, although 2 are deprecated.
+       They mostly differ in the type of charset and byte array they accept.
+    3) There is only one String class so there can only be one way to build an instance
+       which is using the String keyword.
+
+- P-2.11
+    A JUnit test suit runs with 5 tests. If the tests pass they all have green checkmarks
+    but otherwise if tests fail there is explanation of what went wrong. For example, the test
+    might show what value it expected and what it received. Also, the time it took to execute the test
+    is shown in ms.
+
+- P-2.13
+    The whole project is included in the JavaDoc. It makes it easy to browse project packages. Within a package
+    it is easy to have an overview of various classes it contains. Then within classes, there is quite a detailed
+    description of the various methods and properties the class has. It shows the arguments a method receives as
+    well as what it returns. Overall, makes it easy to learn about code without going through the code itself.
