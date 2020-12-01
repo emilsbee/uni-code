@@ -16,5 +16,5 @@ public interface Checker {
         );
     };
 
-    boolean generatePassword();
+    String generatePassword();
 }

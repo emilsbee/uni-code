@@ -39,8 +39,8 @@ public class Password {
     public boolean acceptable(String suggestion) {
         return (
                 suggestion != null &&
-                        suggestion.length() >= 6 && // Check that suggestion is 6 or more characters
-                        !suggestion.contains(" ") // Check that there aren't any spaces in between
+                suggestion.length() >= 6 && // Check that suggestion is 6 or more characters
+                !suggestion.contains(" ") // Check that there aren't any spaces in between
         );
     }
 
