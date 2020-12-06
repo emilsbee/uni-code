@@ -1,0 +1,140 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "java",
+        "name": "Debug (Launch) with Arguments Prompt",
+        "request": "launch",
+        "mainClass": "ss.week4.tictactoe.TicTacToe",
+        "args": "${command:SpecifyProgramArgs}"
+    },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TicTacToe",
+            "request": "launch",
+            "mainClass": "ss.week4.tictactoe.TicTacToe",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BabylonianAlgorithm<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.BabylonianAlgorithm",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CountDivisors<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.CountDivisors",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GrossAndDozens<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.GrossAndDozens",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.HelloWorld",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MostDivisors<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.MostDivisors",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MostDivisorsWithArray<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.MostDivisorsWithArray",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RollTheDice<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.RollTheDice",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreeWayLamp<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.ThreeWayLamp",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HotelTUI<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.hotel.HotelTUI",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SimpleBillPrinter<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week1.hotel.SimpleBillPrinter",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreeWayLampTUI<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week2.ThreeWayLampTUI",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ThreeWayLampTest<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week2.test.ThreeWayLampTest",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SysoutPrinter<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week3.bill.SysoutPrinter",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HotelTUI<uni-code_7160136d>(1)",
+            "request": "launch",
+            "mainClass": "ss.week3.hotel.HotelTUI",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BasicPassword<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week3.password.BasicPassword",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Password<uni-code_7160136d>",
+            "request": "launch",
+            "mainClass": "ss.week3.password.Password",
+            "projectName": "uni-code_7160136d"
+        }
+    ]
+}

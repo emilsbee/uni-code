@@ -2,6 +2,8 @@ package ss.week4.tictactoe;
 
 import java.util.Arrays;
 
+// import jdk.javadoc.internal.doclets.formats.html.resources.standard;
+
 /**
  * Board for the Tic Tac Toe game. Module 2 lab assignment.
  *
@@ -11,6 +13,8 @@ import java.util.Arrays;
 public class Board {
     public static final int DIM = 3;
     public static final int[] DIM_INDICES = new int[]{0,1,2,3,4,5,6,7,8};
+    public static final int[] DIAGONAL_1 = new int[]{0,4,8};
+    public static final int[] DIAGONAL_2 = new int[]{2,4,6};
     private static final String[] NUMBERING = {" 0 | 1 | 2 ", "---+---+---",
         " 3 | 4 | 5 ", "---+---+---", " 6 | 7 | 8 "};
     private static final String LINE = NUMBERING[1];
@@ -75,7 +79,8 @@ public class Board {
      * @return true if 0 <= row < DIM && 0 <= col < DIM
      */
     public boolean isField(int row, int col) {
-        return row <= Board.DIM && row >= 1 && col <= Board.DIM && col >= 1;
+        // Basically checks that the row and column are from 1 to Board.DIM
+        return row+1 <= Board.DIM && row+1 >= 1 && col+1 <= Board.DIM && col+1 >= 1;
     }
     
     /**
@@ -121,7 +126,7 @@ public class Board {
      * @return true if the field is empty
      */
     public boolean isEmptyField(int row, int col) {
-    	return fields[index(row, col)].equals(Mark.EMPTY);
+        return fields[index(row, col)].equals(Mark.EMPTY);
     }
 
     /**
@@ -146,8 +151,7 @@ public class Board {
      * @return true if the game is over
      */
     public boolean gameOver() {
-    	// TODO: implement, see exercise P-4.6
-        return false;
+        return isFull() || hasWinner();
     }
 
     /**
@@ -206,6 +210,10 @@ public class Board {
         return false;
     }
 
+    public boolean contains(final int[] arr, final int key) {
+        return Arrays.stream(arr).anyMatch(i -> i == key);
+    }
+
     /**
      * Checks whether there is a diagonal which is full and only contains the
      * mark m.
@@ -213,9 +221,26 @@ public class Board {
      * @return true if there is a diagonal controlled by m
      */
     public boolean hasDiagonal(Mark m) {
-    	// TODO: implement, see exercise P-4.6
-        return false;
-    }
+        // Flags for detecting whether a diagonal consists of the same mark
+        boolean diagonal1 = true;
+        boolean diagonal2 = true;
+        
+        // Check diagonal 1
+        for (int i = 0; i < Board.DIAGONAL_1.length; i++) { // Iterate over the diagonal 1 marks 
+            if (!fields[Board.DIAGONAL_1[i]].equals(m)) { // If the mark isn't the same 
+                diagonal1 = false;
+            }
+        }
+
+        // Check diagonal 2
+        for (int k = 0; k < Board.DIAGONAL_2.length; k++) { // Iterate over the diagonal 2 marks
+            if (!fields[Board.DIAGONAL_2[k]].equals(m)) { // If the mark isn't the same
+                diagonal2 = false;
+            }
+        }
+
+        return diagonal1 || diagonal2; // Returns true if either diagonal 1 or diagonal 2 or both are with same marks 
+     }
 
     /**
      * Checks if the mark m has won. A mark wins if it controls at
@@ -226,8 +251,7 @@ public class Board {
      * @return true if the mark has won
      */
     public boolean isWinner(Mark m) {
-    	// TODO: implement, see exercise P-4.6
-        return false;
+        return hasColumn(m) || hasRow(m) || hasDiagonal(m);
     }
 
     /**
@@ -237,8 +261,7 @@ public class Board {
      * @return true if the student has a winner.
      */
     public boolean hasWinner() {
-    	// TODO: implement, see exercise P-4.6
-        return false;
+        return isWinner(Mark.OO) || isWinner(Mark.XX);
     }
 
     /**
@@ -271,7 +294,9 @@ public class Board {
      * @ensures all fields are EMPTY
      */
     public void reset() {
-    	// TODO: implement, see exercise P-4.6
+    	for (int i = 0; i < fields.length; i++) {
+            fields[i] = Mark.EMPTY;
+        }
     }
 
     /**

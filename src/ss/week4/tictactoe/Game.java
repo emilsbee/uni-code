@@ -78,7 +78,50 @@ public class Game {
      * After each move, the changed game situation is printed.
      */
     private void play() {
-        // TODO: implement, see P-4.7
+        boolean gameRunning = true; // Flag for game loop
+        current = 1; // Set the initial move to player 1
+
+        update(); // Show the empty board 
+
+        while(gameRunning) { // Game loop
+
+            System.out.println("Make your move " + (current == 1 ? "player 1" : "player 2")); // Conditionally indicates respective player to move
+
+            int move = TextIO.getInt(); // Reads move 
+
+            if (current == 1) { // If player 1 move
+
+                if (board.isField(move) && board.isEmptyField(move)) { // If the move player 1 made is within the field and is also on an empty space
+
+                    board.setField(move, players[current-1].getMark()); // Makes the player 1 move
+                    
+                    current = 2; // Sets the next move to player 2
+
+                } else { // If move is bad (either off board or on a space in field which already has a mark)
+                    System.out.println("Bad move. Try again."); 
+                }
+                
+            } else if (current == 2) { // If player 2 move
+                
+                if (board.isField(move) && board.isEmptyField(move)) {  // If the move player 2 made is within the field and is also on an empty space
+                    
+                    board.setField(move, players[current-1].getMark()); // Set player 2 move
+                    
+                    current = 1; // Set next move to player 1
+
+                } else { // Bad move
+                    System.out.println("Bad move. Try again.");
+                }
+            }
+
+            update(); // Updates the board after every move 
+
+            if (board.isFull() || board.hasWinner()) { // Checks that the game isnt over 
+                gameRunning = false;
+            }
+        }
+
+        printResult();
     }
 
     /**
