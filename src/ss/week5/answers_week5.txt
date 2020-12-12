@@ -9,4 +9,9 @@ Your name(s):
 
 Please submit your textual answers to the following questions in this file:
 - P-5.8
+    The value from converting hex string 4d6f64756c652032 to a string: Module 2
+
+- P-5.9
+    Output from decoding 010203040506 to a byte array and then encoding this byte array in Base64: AQIDBAUG
+    The Base64 encoding contains less characters than Hex encoding, so it takes up less memory. That's the advantage of it.
 

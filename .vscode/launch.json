@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Zipper",
+            "request": "launch",
+            "mainClass": "ss.week5.Zipper",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Encoding",
+            "request": "launch",
+            "mainClass": "ss.week5.Encoding",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TicTacToe",
             "request": "launch",
             "mainClass": "ss.week5.tictactoe.TicTacToe",

@@ -15,10 +15,13 @@ public class SmartStrategy implements Strategy {
      */
     public int isDirectWin(Board board, Mark mark) {
         for (int i : Board.DIM_INDICES) { // Iterates over indices of a field
-                
-            if (board.isEmptyField(i)) { // If the field is empty
-                board.setField(i, mark); // Make a move for that field as the computer
-                if (board.isWinner(mark)){ // If the move is a winner 
+
+            Board boardCopy = board.deepCopy(); // Create a fresh copy on every iteration
+
+
+            if (boardCopy.isEmptyField(i)) { // If the field is empty
+                boardCopy.setField(i, mark); // Make a move for that field as the computer
+                if (boardCopy.isWinner(mark)){ // If the move is a winner 
                     return i;
                 } 
             }
@@ -28,13 +31,21 @@ public class SmartStrategy implements Strategy {
         return -1;
     }
 
+    /**
+     * 
+     * @param board
+     * @param mark
+     * @return -1 if there is not a move resulting in direct win for the other player or the index index of the field which will yield a direct for the other player
+     */
     public int isDirectLoss(Board board, Mark mark) {
-        for (int i : Board.DIM_INDICES) {
+        for (int k : Board.DIM_INDICES) {
 
-            if (board.isEmptyField(i)) {
-                board.setField(i, mark.other());
-                if (board.isWinner(mark.other())) {
-                    return i;
+            Board boardCopy = board.deepCopy(); // Create a fresh copy on every iteration
+            
+            if (boardCopy.isEmptyField(k)) {
+                boardCopy.setField(k, mark.other());
+                if (boardCopy.isWinner(mark.other())) {
+                    return k;
                 }
             }
         }
@@ -42,6 +53,7 @@ public class SmartStrategy implements Strategy {
         return -1;
     }
 
+    // Finds first empty field on the board
     public int firstEmpty(Board board) {
         for (int i : Board.DIM_INDICES) {
             if (board.isEmptyField(i)) {
