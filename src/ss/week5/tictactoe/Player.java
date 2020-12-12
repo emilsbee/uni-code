@@ -15,8 +15,8 @@ public abstract class Player {
 
     // -- Instance variables -----------------------------------------
 
-    private String name;
-    private Mark mark;
+    protected String name;
+    protected Mark mark;
 
     // -- Constructors -----------------------------------------------
 
@@ -27,7 +27,7 @@ public abstract class Player {
      * @ensures the Name of this player will be name
      * @ensures the Mark of this player will be mark
      */
-    public Player(String name, Mark mark) {
+    protected Player(String name, Mark mark) {
         this.name = name;
         this.mark = mark;
     }

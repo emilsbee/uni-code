@@ -4,13 +4,20 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    {
-        "type": "java",
-        "name": "Debug (Launch) with Arguments Prompt",
-        "request": "launch",
-        "mainClass": "ss.week4.tictactoe.TicTacToe",
-        "args": "${command:SpecifyProgramArgs}"
-    },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TicTacToe",
+            "request": "launch",
+            "mainClass": "ss.week5.tictactoe.TicTacToe",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) with Arguments Prompt",
+            "request": "launch",
+            "mainClass": "ss.week4.tictactoe.TicTacToe",
+            "args": "${command:SpecifyProgramArgs}"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - TicTacToe",
