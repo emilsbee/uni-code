@@ -1,0 +1,37 @@
+    _   _  _ _____      _____ ___  ___  __      _____ ___ _  __   __
+   /_\ | \| / __\ \    / / __| _ \/ __| \ \    / / __| __| |/ /  / /
+  / _ \| .` \__ \\ \/\/ /| _||   /\__ \  \ \/\/ /| _|| _|| ' <  / _ \
+ /_/ \_\_|\_|___/ \_/\_/ |___|_|_\|___/   \_/\_/ |___|___|_|\_\ \___/
+
+Your name(s):
+-
+-
+
+Please submit your textual answers to the following questions in this file:
+- P-6.9
+
+    26 * 26 * 26 * 26 is the amount of times it could take max to find the right 4 letter lowercase password.
+    Basically for each letter you can pick any letter from the 26 letter english alphabet, hence the 26.
+
+- P-6.11
+
+    I would guess it is because the drawMandel method draws on the height on width provided. Hence, anything that is
+    within that space gets overdrawn which in this case is the menu that when opened is above the mandel.
+
+- P-6.12
+
+    When a call is made to mandelDraw() instead of draw() there is no multithreading, hence after starting the drawing
+    you can't access the menu during that time. 
+
+- P-6.14
+
+    There is no thread initiated so nothing can be drawn.
+
+- P-6.18
+- P-6.20
+- P-6.21
+- P-6.23
+- P-6.25
+- P-6.26
+- P-6.28
+- P-6.29

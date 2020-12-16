@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Bounce",
+            "request": "launch",
+            "mainClass": "ss.week6.bounce.Bounce",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MandelSet",
+            "request": "launch",
+            "mainClass": "ss.week6.mandel.MandelSet",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DictionaryAttack",
+            "request": "launch",
+            "mainClass": "ss.week6.dictionaryattack.DictionaryAttack",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Card",
+            "request": "launch",
+            "mainClass": "ss.week6.cards.Card",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Words",
+            "request": "launch",
+            "mainClass": "ss.week6.Words",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Zipper",
             "request": "launch",
             "mainClass": "ss.week5.Zipper",
