@@ -28,10 +28,42 @@ Please submit your textual answers to the following questions in this file:
     There is no thread initiated so nothing can be drawn.
 
 - P-6.18
+
+    Problem is that two threads are trying to use the same resources at the same time. This is not ideal as the input for 
+    both threads shows up at the same time so its basically impossible to use.
+
 - P-6.20
+
+    Overall everything works as expected except that the printing of results doesn't happen right away but only at the end 
+    for both threads. Instead the printing should happen right after the two numbers are entered. 
+
 - P-6.21
+
+    Nothing changes if sum() is made synchronised and that's because the two thread use different instances of TestSyncConsole. So ultimately
+    the threads don't access the same sum() method.
+
 - P-6.23
+
+    1) It basically means that threads can enter the lock more than once. 
+
+    2) It is indeed different as the synchronised statement only locks the resource for a thread once without the possiblity to re-enter the lock.
+
+
+    3) In short ReentrantLock is more flexible. It allows to perform resource locking wihout a block, meaning you could even use a lock between methods. 
+    The said flexibility offers a variety of methods which I won't go into but for example the ReentranctLock offers lock polling, thread fairness policy, etc. 
+
+    4) Undoubtedly it is a bit more complicated to use and can be an overkill in situation where a simple synchronisation is needed.  
+
 - P-6.25
+
+    The accessing of buffer by the consumer and producer threads is well basically random. This could be solved by synchronisation.
+
 - P-6.26
+
+    
+
 - P-6.28
+
+
+
 - P-6.29

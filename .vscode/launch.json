@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ProdCons",
+            "request": "launch",
+            "mainClass": "ss.week6.threads.ProdCons",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSyncConsoleLock",
+            "request": "launch",
+            "mainClass": "ss.week6.threads.TestSyncConsoleLock",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSyncConsole",
+            "request": "launch",
+            "mainClass": "ss.week6.threads.TestSyncConsole",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestConsole",
+            "request": "launch",
+            "mainClass": "ss.week6.threads.TestConsole",
+            "projectName": "uni-code_7160136d"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Bounce",
             "request": "launch",
             "mainClass": "ss.week6.bounce.Bounce",

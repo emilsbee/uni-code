@@ -16,6 +16,7 @@ import javax.swing.JPanel;
  */
 public class BallPanel extends JPanel {
 	private List<Ball> balls;
+	
 
 	public BallPanel() {
 		this.balls = new java.util.ArrayList<>();
