@@ -65,7 +65,7 @@ public class Card
 			Card readCard = read(new BufferedReader(new FileReader("./"+args[0]+".txt")));
 	
 			if (card1.equals(readCard)) {
-				System.out.println("Same card!!!");
+				// System.out.println("Same card!!!");
 			}
 		}
 	}

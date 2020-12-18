@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IntCell",
+            "request": "launch",
+            "mainClass": "ss.week6.IntCell",
+            "projectName": "uni-code_ab6614df"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccountSync",
+            "request": "launch",
+            "mainClass": "ss.week6.account.AccountSync",
+            "projectName": "uni-code_ab6614df"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProdCons",
+            "request": "launch",
+            "mainClass": "ss.week6.threads.ProdCons",
+            "projectName": "uni-code_ab6614df"
+        },
+        {
+            "type": "java",
+            "name": "Launch Words",
+            "request": "launch",
+            "mainClass": "ss.week6.Words",
+            "projectName": "uni-code_ab6614df"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ProdCons",
             "request": "launch",
             "mainClass": "ss.week6.threads.ProdCons",

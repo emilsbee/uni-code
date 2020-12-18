@@ -29,7 +29,7 @@ public class DictionaryAttackTest {
     public void setUp() {
         dictionaryAttack = new DictionaryAttack();
         try {
-            dictionaryAttack.readPasswords("/home/emils/Documents/Code/uni-code/src/ss/week6/test/LeakedPasswords.txt");
+            dictionaryAttack.readPasswords(PATH+"LeakedPasswords.txt");
         } catch (IOException e) {
             System.err.println("Unable to read password file.");
             e.printStackTrace();

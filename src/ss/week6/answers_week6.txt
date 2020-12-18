@@ -60,10 +60,23 @@ Please submit your textual answers to the following questions in this file:
 
 - P-6.26
 
-    
+    The notifyAll() is preferable because notify() wakes up only one thread which might not be the thread that is needed to woken. Hence, notifyAll() is a safer option.
 
 - P-6.28
 
-
+    The finall balance in the account isnt always 0.0 because two threads are operating with the same resource without that resource being synchronised.
 
 - P-6.29
+
+    1) The only possible value is 3. This is because both thread a1 and thread a2 operate on the
+    same IntCell and they are provided 1,2 as values to add respectively. Important to note that 
+    the IntCell starts at 0 so 0 + 1 + 1 + 1 = 3.
+
+    2) Calling run() doesn't create a new thread. So if a1.start() and a2.start() would be replaced by a1.run() and a2.run(), then no new threads would be created
+    but the method run() would still run twice, though on the same one original thread.
+
+    3) The try/catch has to be there because one thread might be interrupted and then the other thread would keep waiting for it to finish although it never would. Hence
+    the try/catch has to be implemented. Also, it is not possible to compile if the two .join() aren't in a try/catch block.
+
+    4) The result in this case would be the same. This is because ultimately it doesnt matter in what order (or simultaneously) threads access the the methods since they both are called once 
+    and therefore whether you first add 2 then 1 to the value or add 1 and then 2 the result will always be the same.
